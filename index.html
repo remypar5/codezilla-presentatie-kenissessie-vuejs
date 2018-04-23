@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/codezilla.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,61 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background="css/theme/assets/openings-image.jpg"></section>
+				<section>
+					<section>
+						<h1>CODEZILLA</h1>
+						<h2>VueJS for dummies</h2>
+						<p>8 mei 2018 @ Trechters Utrecht</p>
+						<p>Huib Geertruy && Remy Parzinski</p>
+					</section>
+
+					<section>
+						<h2>15-16 februari</h2>
+						<ul>
+							<li>Frontend Developer Love Conference</li>
+							<li>VueJS Love Conference</li>
+						</ul>
+						<aside class="notes">
+							Theater Amsterdam
+						</aside>
+					</section>
+
+					<section>
+						<h2>Programma</h2>
+						<ul>
+							<li>Onderwerp #</li>
+							<li>Waarom VueJS?</li>
+							<li>VueJS vs the rest</li>
+							<li>Voorbeeld: Todo List</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section><h2>Waarom VueJS?</h2></section>
+					<section><h2>Waarom niet VueJS?</h2></section>
+				</section>
+
+				<section>
+					<h1>VueJS vs &hellip;</h1>
+					<section>
+						<h2>React</h2>
+						<ul>
+							<li>Voordelen to React: &hellip;</li>
+							<li>Nadelen to React: &hellip;</li>
+							<li>Gelijkheid met React: &hellip;</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Angular</h2>
+						<ul>
+							<li>Voordelen to Angular: &hellip;</li>
+							<li>Voordelen to Angular: &hellip;</li>
+							<li>Gelijkheid met Angular: &hellip;</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -42,7 +95,8 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				history: true,
 			});
 		</script>
 	</body>
