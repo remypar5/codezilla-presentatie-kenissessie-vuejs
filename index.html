@@ -45,19 +45,44 @@
 					</section>
 
 					<section>
+						<h1>Kennis maken met met VueJS</h1>
 						<h2>Programma</h2>
 						<ul>
-							<li>Onderwerp #</li>
 							<li>Waarom VueJS?</li>
 							<li>VueJS vs the rest</li>
-							<li>Voorbeeld: Todo List</li>
+							<li>Workshop: Todo List</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<section><h2>Waarom VueJS?</h2></section>
-					<section><h2>Waarom niet VueJS?</h2></section>
+					<section>
+						<h2>Waarom VueJS?</h2>
+						<ul>
+							<li>Kleine footprint</li>
+							<li>Snel/Performant</li>
+							<li>Snel resultaat</li>
+							<li>Goede documentatie</li>
+							<li>Lage leercurve</li>
+							<li>Flexibiliteit</li>
+						</ul>
+						<aside class="notes">
+							<p><strong>Flexibiliteit: </strong>7 verschillende manieren om templates te doen</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Waarom niet VueJS?</h2>
+						<ul>
+							<li>Kleine developer community</li>
+							<li>Taalbarri&egrave;re</li>
+							<li>Flexibiliteit</li>
+							<li>Onnatuurlijke syntax<span class="fragment"> (eigen mening ;)</span></li>
+						</ul>
+						<aside class="notes">
+							<p>Maker <strong>Evan You</strong> is Chinees-Amerikaans en support vnl. Chinese developers.</p>
+							<p><strong>Overflexibiliteit</strong> maakt de instap in bestaande projecten moeilijk.</p>
+						</aside>
+					</section>
 				</section>
 
 				<section>
@@ -88,14 +113,14 @@
 									<td>&#10008;</td>
 								</tr>
 								<tr>
-									<th>JSX</th>
+									<th>Virtual DOM</th>
 									<td>&#10004;</td>
 									<td>&#10008;</td>
 									<td>&#10008;</td>
 									<td>&#10004;</td>
 								</tr>
 								<tr>
-									<th>Virtual DOM</th>
+									<th>JSX</th>
 									<td>&#10004;</td>
 									<td>&#10008;</td>
 									<td>&#10008;</td>
@@ -107,63 +132,6 @@
 									<td>&#10008;</td>
 									<td>&#10008;</td>
 									<td>&#10008;</td>
-								</tr>
-								<tr>
-									<th>Routing</th>
-									<td>&#10004;</td>
-									<td>&#10008;</td>
-									<td>&#10008;</td>
-									<td>&#10008;</td>
-								</tr>
-								<tr>
-									<th>State management</th>
-									<td>&#10004;</td>
-									<td>&#10008;</td>
-									<td>&#10008;</td>
-									<td>&#10008;</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-					<section>
-						<table>
-							<thead>
-								<tr>
-									<th></th>
-									<th>VueJS</th>
-									<th>Angular</th>
-									<th>AngularJS</th>
-									<th>React</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>Flexibility</th>
-									<td>&#10004;</td>
-									<td>&#10004;</td>
-									<td>&#10008;</td>
-									<td>&#10004;</td>
-								</tr>
-								<tr>
-									<th>Two-way Binding</th>
-									<td>&#10004;</td>
-									<td>&#10004;</td>
-									<td>&#10004;</td>
-									<td>&#10008;</td>
-								</tr>
-								<tr>
-									<th>TypeScript</th>
-									<td>&#10004;</td>
-									<td>&#10004;</td>
-									<td>&#10008;</td>
-									<td>&#10004;</td>
-								</tr>
-								<tr>
-									<th>Footprint (minified)</th>
-									<td>~84Kb</td>
-									<td>~??????Kb</td>
-									<td>~166Kb</td>
-									<td>~5.5Kb</td>
 								</tr>
 							</tbody>
 						</table>
@@ -218,27 +186,55 @@
 							</tbody>
 						</table>
 					</section>
-				</section>
-
-				<section>
 					<section>
-						<h1>VueJS vs &hellip;</h1>
-					</section>
-					<section>
-						<h2>React</h2>
-						<ul>
-							<li>Voordelen to React: &hellip;</li>
-							<li>Nadelen to React: &hellip;</li>
-							<li>Gelijkheid met React: &hellip;</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Angular</h2>
-						<ul>
-							<li>Voordelen to Angular: &hellip;</li>
-							<li>Voordelen to Angular: &hellip;</li>
-							<li>Gelijkheid met Angular: &hellip;</li>
-						</ul>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>VueJS</th>
+									<th>Angular</th>
+									<th>AngularJS</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Flexibility</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Two-way Binding</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+								</tr>
+								<tr>
+									<th>TypeScript</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Latest Stable</th>
+									<td>2.5.16</td>
+									<td>5.2.10</td>
+									<td>1.6.10</td>
+									<td>16.3.2</td>
+								</tr>
+								<tr class="fragment">
+									<th>Footprint (minified)</th>
+									<td>~84Kb</td>
+									<td>>=200Kb</td>
+									<td>~166Kb</td>
+									<td>~5.5Kb</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 				</section>
 			</div>
