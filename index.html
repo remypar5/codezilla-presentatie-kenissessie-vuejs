@@ -45,38 +45,240 @@
 					</section>
 
 					<section>
+						<h1>Kennis maken met VueJS</h1>
 						<h2>Programma</h2>
 						<ul>
-							<li>Onderwerp #</li>
 							<li>Waarom VueJS?</li>
 							<li>VueJS vs the rest</li>
-							<li>Voorbeeld: Todo List</li>
+							<li>Workshop: Todo List</li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<section><h2>Waarom VueJS?</h2></section>
-					<section><h2>Waarom niet VueJS?</h2></section>
+					<section>
+						<h2>Waarom VueJS?</h2>
+						<ul>
+							<li>Kleine footprint</li>
+							<li>Snel/Performant</li>
+							<li>Snel resultaat</li>
+							<li>Goede documentatie</li>
+							<li>Lage leercurve</li>
+							<li>Flexibiliteit</li>
+						</ul>
+						<aside class="notes">
+							<p><strong>Flexibiliteit: </strong>7 verschillende manieren om templates te doen</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Waarom niet VueJS?</h2>
+						<ul>
+							<li>Kleine developer community</li>
+							<li>Taalbarri&egrave;re</li>
+							<li>Flexibiliteit</li>
+							<li>Onnatuurlijke syntax<span class="fragment"> (eigen mening ;)</span></li>
+						</ul>
+						<aside class="notes">
+							<p>Maker <strong>Evan You</strong> is Chinees-Amerikaans en support vnl. Chinese developers.</p>
+							<p><strong>Overflexibiliteit</strong> maakt de instap in bestaande projecten moeilijk.</p>
+						</aside>
+					</section>
 				</section>
 
+				<!-- Comparison -->
 				<section>
-					<h1>VueJS vs &hellip;</h1>
 					<section>
-						<h2>React</h2>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>VueJS</th>
+									<th>Angular</th>
+									<th>AngularJS</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Components</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10004; (1.5+)</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Directives</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+								</tr>
+								<tr>
+									<th>Virtual DOM</th>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>JSX</th>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Animations</th>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>VueJS</th>
+									<th>Angular</th>
+									<th>AngularJS</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>High Performance</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>SSR</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Lifecycle hooks</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>CLI tools</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+								</tr>
+								<tr>
+									<th>Debugger tools</th>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+									<td>&#10008;</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>VueJS</th>
+									<th>Angular</th>
+									<th>AngularJS</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Flexibility</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Two-way Binding</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+								</tr>
+								<tr>
+									<th>TypeScript</th>
+									<td>&#10004;</td>
+									<td>&#10004;</td>
+									<td>&#10008;</td>
+									<td>&#10004;</td>
+								</tr>
+								<tr>
+									<th>Latest Stable</th>
+									<td>2.5.16</td>
+									<td>6.0.0</td>
+									<td>1.6.10</td>
+									<td>16.3.2</td>
+								</tr>
+								<tr class="fragment">
+									<th>Footprint (minified)</th>
+									<td>~84Kb</td>
+									<td>>=200Kb</td>
+									<td>~166Kb</td>
+									<td>~5.5Kb</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<!-- Workshop -->
+				<section>
+					<h1>Workshop</h1>
+					<section>
+						<h2>Todo app</h2>
+						<p>Bouw een Todo app met VueJS</p>
+						<p class="fragment">Voor de pro's: maak gebruik van VueX, vuePress, Animations, etc.</p>
+					</section>
+
+					<section>
+						<h2>Wat moet het doen?</h2>
 						<ul>
-							<li>Voordelen to React: &hellip;</li>
-							<li>Nadelen to React: &hellip;</li>
-							<li>Gelijkheid met React: &hellip;</li>
+							<li>Nieuw item toevoegen</li>
+							<li>Item afvinken/aanpassen</li>
+							<li>Afgevinkte items verwijderen</li>
+							<li>Maak gebruik van persistence (bvb. localStorage)</li>
 						</ul>
 					</section>
 					<section>
-						<h2>Angular</h2>
+						<h2>Wat heb je nodig?</h2>
 						<ul>
-							<li>Voordelen to Angular: &hellip;</li>
-							<li>Voordelen to Angular: &hellip;</li>
-							<li>Gelijkheid met Angular: &hellip;</li>
+							<li>Declarative rendering<a href="https://css-tricks.com/intro-to-vue-2-components-props-slots/">*</a></li>
+							<li>Data Binding<a href="https://v1.vuejs.org/guide/syntax.html">*</a></li>
+							<li>Iterating Data<a href="https://vuejs.org/v2/guide/list.html">*</a></li>
+							<li>Conditional Rendering<a href="https://vuejs.org/v2/guide/conditional.html">*</a></li>
+							<li>Event Emission<a href="https://vuejs.org/v2/guide/components-custom-events.html">*</a></li>
+							<li>Vue CLI<a href="https://github.com/vuejs/vue-cli/blob/dev/docs/README.md">*</a></li>
 						</ul>
+					</section>
+
+					<section>
+						<h2>Gettng started</h2>
+						<ol>
+							<li><pre><code>npm init</code></pre></li>
+							<li><pre><code>npm install vue-cli</code></pre></li>
+							<li><pre><code>./node_modules/.bin/vue init webpack my-todo-app</code></pre></li>
+							<li><pre><code>cd my-todo-app</code></pre></li>
+							<li><pre><code>npm start</code></pre></li>
+							<li>Implementeer evt. een UI library (bootstrap/bulma/etc.)</li>
+						</ol>
 					</section>
 				</section>
 			</div>
